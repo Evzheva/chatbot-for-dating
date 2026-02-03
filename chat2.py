@@ -15,9 +15,9 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-    BOT_TOKEN = "8387622049:AAFoiAYUFuiVAYh7p490t7cpNEym2ozsT3U"
+    BOT_TOKEN = "" # Токен и айди удалены в целях безопасности 
 
-ADMIN_IDS = [1288547221]
+ADMIN_IDS = []
 
 PHOTOS_DIR = "user_photos"
 if not os.path.exists(PHOTOS_DIR):
@@ -2619,4 +2619,5 @@ def main():
     application.run_polling(allowed_updates=Update.ALL_TYPES)
 
 if __name__ == '__main__':
+
     main()
